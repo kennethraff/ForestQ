@@ -1,4 +1,4 @@
-package com.uc.forestq
+package com.uc.forestq.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         Handler().postDelayed({
-            val intent = Intent(this@MainActivity, HomeActivity::class.java)
+            val intent = Intent(this@MainActivity, AuthPageActivity::class.java)
             startActivity(intent)
             finish()
         },3000)
